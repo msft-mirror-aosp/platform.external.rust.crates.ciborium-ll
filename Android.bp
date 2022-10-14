@@ -18,6 +18,26 @@ license {
     ],
 }
 
+rust_test {
+    name: "ciborium-ll_test_src_lib",
+    host_supported: true,
+    crate_name: "ciborium_ll",
+    cargo_env_compat: true,
+    cargo_pkg_version: "0.2.0",
+    srcs: ["src/lib.rs"],
+    test_suites: ["general-tests"],
+    auto_gen_config: true,
+    test_options: {
+        unit_test: true,
+    },
+    edition: "2021",
+    rustlibs: [
+        "libciborium_io",
+        "libhalf",
+        "libhex",
+    ],
+}
+
 rust_library {
     name: "libciborium_ll",
     host_supported: true,
