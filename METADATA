@@ -1,7 +1,9 @@
-name: "ciborium-ll"
-description:
-    "Low-level CBOR codec primitives"
+# This project was upgraded with external_updater.
+# Usage: tools/external_updater/updater.sh update rust/crates/ciborium-ll
+# For more info, check https://cs.android.com/android/platform/superproject/+/master:tools/external_updater/README.md
 
+name: "ciborium-ll"
+description: "Low-level CBOR codec primitives"
 third_party {
   url {
     type: HOMEPAGE
@@ -9,10 +11,13 @@ third_party {
   }
   url {
     type: ARCHIVE
-    value: "https://static.crates.io/crates/ciborium-ll/ciborium-ll-0.2.0.crate"
+    value: "https://static.crates.io/crates/ciborium-ll/ciborium-ll-0.2.1.crate"
   }
-  version: "0.2.0"
-  last_upgrade_date { year: 2022 month: 1 day: 17 }
+  version: "0.2.1"
   license_type: NOTICE
+  last_upgrade_date {
+    year: 2023
+    month: 6
+    day: 14
+  }
 }
-
