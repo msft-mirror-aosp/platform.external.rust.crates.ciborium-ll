@@ -1,9 +1,10 @@
 [package]
 name = "ciborium-ll"
-version = "0.2.0"
+version = "0.2.1"
 authors = ["Nathaniel McCallum <npmccallum@profian.com>"]
 license = "Apache-2.0"
 edition = "2021"
+rust-version = "1.56"
 homepage = "https://github.com/enarx/ciborium"
 repository = "https://github.com/enarx/ciborium"
 description = "Low-level CBOR codec primitives"
@@ -20,7 +21,7 @@ is-it-maintained-issue-resolution = { repository = "enarx/ciborium" }
 is-it-maintained-open-issues = { repository = "enarx/ciborium" }
 
 [dependencies]
-ciborium-io = { path = "../ciborium-io", version = "0.2.0" }
+ciborium-io = { path = "../ciborium-io", version = "0.2.1" }
 half = "1.6"
 
 [dev-dependencies]
@@ -29,3 +30,6 @@ hex = "0.4"
 [features]
 alloc = []
 std = ["alloc"]
+
+[package.metadata.docs.rs]
+all-features = true
